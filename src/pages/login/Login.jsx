@@ -2,9 +2,12 @@ import React, { Fragment } from 'react';
 import Input from '../../components/form-element/Input';
 
 const Login = () => {
+    const [form, setForm] = useState({ user: '', password: '' })
+
     const handleChange = (e) => {
-        console.log(e.target.value);
+        setForm({...form, [e.target.name]: e.target.value})
     }
+    
     return(
         <div className="login">
             <form onSubmit={(e) => e.preventDefault()}>
