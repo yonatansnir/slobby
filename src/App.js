@@ -1,16 +1,12 @@
-import React, { Fragment } from 'react';
-import Dashboard from './pages/Dashboard';
-import Menu from './components/menu/Menu';
+import React from 'react';
+import Login from './pages/login/Login';
+import Header from './components/header/Header';
 
 const App = () => {
   return(
     <div className="wrapper">
-      <div>
-        <Menu />
-      </div>
-      <div>
-        <Dashboard />
-      </div>
+      <Header />
+      <Login />
     </div>
   )
 }

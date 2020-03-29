@@ -10,14 +10,10 @@ body {
   background-color: #dadada;
 }
 
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .menu {
-  width: 300px;
+  position: absolute;
+  z-index: 10;
+  width: 250px;
   height: 100vh;
   background-color: rgba(255, 0, 0, 0.178);
 }
@@ -78,6 +74,39 @@ header h1 {
   width: 100%;
 }
 
+.form-row {
+  position: relative;
+}
+
+.form-row input {
+  width: 100%;
+  outline: none;
+  padding: 4px;
+  border: 1px solid #adadad;
+  background-color: #f1f1f1;
+}
+
+.form-row input:focus + label {
+  font-size: 0.8em;
+  -webkit-transform: translateY(-120%);
+          transform: translateY(-120%);
+  font-style: italic;
+}
+
+.form-row input:valid + label {
+  font-size: 0.8em;
+  -webkit-transform: translateY(-120%);
+          transform: translateY(-120%);
+  font-style: italic;
+}
+
+.form-row label {
+  position: absolute;
+  left: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -89,5 +118,18 @@ table tbody tr:nth-child(odd) {
 
 table tbody tr:nth-child(even) {
   background-color: lightcoral;
+}
+
+.login form {
+  width: 400px;
+  height: 400px;
+  background-color: #f0f0f0;
+  border: #cccccc solid 1px;
+  border-radius: 2px;
+  margin: 20px auto;
+}
+
+.login form .form-row {
+  margin: 25px;
 }
 /*# sourceMappingURL=style.css.map */

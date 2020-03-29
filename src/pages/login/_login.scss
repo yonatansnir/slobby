@@ -1,0 +1,13 @@
+.login{
+    form{
+        width: 400px;
+        height: 400px;
+        background-color: rgb(240, 240, 240);
+        border: rgb(204, 204, 204) solid 1px;
+        border-radius: 2px;
+        margin: 20px auto;
+        .form-row{
+            margin: 25px;
+        }
+    }
+}

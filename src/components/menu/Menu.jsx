@@ -3,7 +3,7 @@ import React from 'react';
 const Menu = () => {
     return(
         <div className="menu">
-            hello
+            The menu will be here!
         </div>
     )
 }
