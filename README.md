@@ -4,7 +4,8 @@ Here we are all will put tasks that we have do to.
 
 ### Tasks - Components to Write:
 - Put the menu aside of the main page.
-- Logo
+- Logo - Yonatan
+- Add a new Comp
 - Form elements. like the INPUT in the Header, Button and etc...
 - Cards that contain information.
 - Tasks list - All the List > and individual Task.
