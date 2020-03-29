@@ -1,0 +1,93 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #dadada;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu {
+  width: 300px;
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.178);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eeeeee;
+  padding: 5px 10px;
+  border-bottom: #cccccc solid 1px;
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+.hamburger {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  border-radius: 3px;
+  height: 3px;
+  width: 90%;
+  background-color: #252525;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hamburger:hover span:nth-child(1) {
+  width: 50%;
+}
+
+.hamburger:hover span:nth-child(2) {
+  width: 75%;
+}
+
+.hamburger:hover span:nth-child(3) {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: indianred;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: lightcoral;
+}
+/*# sourceMappingURL=style.css.map */

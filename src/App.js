@@ -1,6 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Dashboard from './pages/Dashboard';
+import Menu from './components/menu/Menu';
 
 const App = () => {
-  return <h1>Hello everyone :)</h1>
+  return(
+    <div className="wrapper">
+      <div>
+        <Menu />
+      </div>
+      <div>
+        <Dashboard />
+      </div>
+    </div>
+  )
 }
+
 export default App;
