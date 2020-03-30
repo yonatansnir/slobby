@@ -11,9 +11,17 @@ const Login = () => {
     return(
         <div className="login">
             <form onSubmit={(e) => e.preventDefault()}>
-                <h2>Login</h2>
-                <Input label="User Name" name="user" handleChange={handleChange} />
-                <Input label="Password" name="password" handleChange={handleChange} />
+                <h2>WELCOME</h2>
+                <Input
+                    label="USER NAME"
+                    name="user"
+                    handleChange={handleChange}
+                />
+                <Input
+                    label="PASSWORD"
+                    name="password"
+                    handleChange={handleChange}
+                />
             </form>
         </div>
     )

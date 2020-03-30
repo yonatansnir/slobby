@@ -7,7 +7,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #dadada;
+  background-color: #6e85ec;
+  min-height: 100vh;
 }
 
 .menu {
@@ -82,18 +83,19 @@ header h1 {
   width: 100%;
   outline: none;
   padding: 4px;
-  border: 1px solid #adadad;
-  background-color: #f1f1f1;
+  border: 0px;
+  border-bottom: 1px solid #cfcfcf;
+  background-color: transparent;
 }
 
-.form-row input:focus + label {
+.form-row input:focus ~ label {
   font-size: 0.8em;
   -webkit-transform: translateY(-120%);
           transform: translateY(-120%);
   font-style: italic;
 }
 
-.form-row input:valid + label {
+.form-row input:valid ~ label {
   font-size: 0.8em;
   -webkit-transform: translateY(-120%);
           transform: translateY(-120%);
@@ -101,10 +103,20 @@ header h1 {
 }
 
 .form-row label {
+  color: grey;
   position: absolute;
   left: 2px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.form-row span {
+  width: 100%;
+  left: 0px;
+  position: absolute;
+  bottom: 0px;
+  height: 1px;
+  background-color: #266bff;
 }
 
 table {
@@ -123,13 +135,28 @@ table tbody tr:nth-child(even) {
 .login form {
   width: 400px;
   height: 400px;
-  background-color: #f0f0f0;
+  background-color: white;
   border: #cccccc solid 1px;
-  border-radius: 2px;
-  margin: 20px auto;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  margin: 50px auto;
+  text-align: center;
 }
 
 .login form .form-row {
   margin: 25px;
+}
+
+.login form h2 {
+  color: #266bff;
+  margin: 20px;
+}
+
+.login form:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 /*# sourceMappingURL=style.css.map */
