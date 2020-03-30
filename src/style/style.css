@@ -11,6 +11,34 @@ body {
   min-height: 100vh;
 }
 
+.btn {
+  padding: 8px 50px;
+  outline: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+  border: none;
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.btn-send {
+  background: #3bf053 radial-gradient(circle, #3bf053, transparent);
+}
+
+.btn-send:hover {
+  background-color: #3bf053;
+}
+
+.btn-send:active {
+  background: #3bf053 radial-gradient(circle, white, transparent);
+  background-size: 100%;
+}
+
 .menu {
   position: absolute;
   z-index: 10;
@@ -77,46 +105,55 @@ header h1 {
 
 .form-row {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-row img {
+  width: 20px;
 }
 
 .form-row input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   width: 100%;
   outline: none;
-  padding: 4px;
+  padding: 4px 10px;
   border: 0px;
   border-bottom: 1px solid #cfcfcf;
   background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form-row input:focus {
+  border-bottom: 1px solid #3561da;
 }
 
 .form-row input:focus ~ label {
   font-size: 0.8em;
   -webkit-transform: translateY(-120%);
           transform: translateY(-120%);
-  font-style: italic;
+}
+
+.form-row input:valid {
+  border-bottom: 1px solid #3561da;
 }
 
 .form-row input:valid ~ label {
   font-size: 0.8em;
   -webkit-transform: translateY(-120%);
           transform: translateY(-120%);
-  font-style: italic;
 }
 
 .form-row label {
   color: grey;
   position: absolute;
-  left: 2px;
+  left: 25px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.form-row span {
-  width: 100%;
-  left: 0px;
-  position: absolute;
-  bottom: 0px;
-  height: 1px;
-  background-color: #266bff;
 }
 
 table {

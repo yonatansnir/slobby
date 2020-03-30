@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import Input from '../../components/form-element/Input';
+import Button from '../../components/form-element/Button';
 
 const Login = () => {
     const [form, setForm] = useState({ user: '', password: '' })
@@ -22,6 +23,7 @@ const Login = () => {
                     name="password"
                     handleChange={handleChange}
                 />
+                <Button text="LOGIN" styleClass="btn btn-send" handleClick={() => console.log('Hey')} />
             </form>
         </div>
     )

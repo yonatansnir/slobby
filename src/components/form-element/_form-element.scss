@@ -1,35 +1,37 @@
 .form-row{
     position: relative;
+    display: flex;
+    img{
+        width: 20px;
+    }
     input{
+        flex-grow: 1;
         width: 100%;
         outline: none;
-        padding: 4px;
+        padding: 4px 10px;
         border: 0px;
         border-bottom: 1px solid rgb(207, 207, 207);
         background-color: transparent;
-        &:focus ~ label{
-            font-size: 0.8em;
-            transform: translateY(-120%);
-            font-style: italic;
+        transition: 0.5s;
+        &:focus{
+            border-bottom: 1px solid rgb(53, 97, 218);
+            & ~ label{
+                font-size: 0.8em;
+                transform: translateY(-120%);
+            }
         }
-        &:valid ~ label{
-            font-size: 0.8em;
-            transform: translateY(-120%);
-            font-style: italic;
+        &:valid{
+            border-bottom: 1px solid rgb(53, 97, 218);
+            & ~ label{
+                font-size: 0.8em;
+                transform: translateY(-120%);
+            }
         }
     }
     label{
         color: grey;
         position: absolute;
-        left: 2px;
+        left: 25px;
         transition: 0.5s;
-    }
-    span{
-        width: 100%;
-        left: 0px;
-        position: absolute;
-        bottom: 0px;
-        height: 1px;
-        background-color:  rgb(38, 107, 255);
     }
 }
