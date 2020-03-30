@@ -11,13 +11,15 @@
     transition: 0.4s;
 
     &-send{
-        background: rgb(59, 240, 83) radial-gradient(circle, rgb(59, 240, 83), transparent);
+        background: rgb(59, 240, 83) radial-gradient(circle, rgb(59, 240, 83), transparent) no-repeat center;
+        background-size: 0;
         &:hover{
             background-color: rgb(59, 240, 83);
         }
         &:active{
-            background: rgb(59, 240, 83) radial-gradient(circle, rgb(255, 255, 255), transparent);
-            background-size: 100%;
+            background: rgb(59, 240, 83) radial-gradient(circle, rgb(255, 255, 255), transparent) no-repeat center;
+            background-size: 1000%;
+            transition: background 2s;
         }
     }
 }
