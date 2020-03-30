@@ -13,7 +13,7 @@ Here we are all will put tasks that we have do to.
 - Problems
 - Page with all the Guest with Search Option.
 - Page with all the Problems.
-- Page with the rooms. - Yonatan - branch rooms-page
+- Page with the rooms.
 - Page with all the Workers. Nina - branch workers-page
 - Page with all the Users. / Should be used in the same Components like workers.
 
