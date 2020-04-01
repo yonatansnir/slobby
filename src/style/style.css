@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f8f8f8;
+  background: #21abfc;
   min-height: 100vh;
 }
 
@@ -184,6 +184,7 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #727272;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -218,8 +219,8 @@ header h1 {
   width: 5px;
   height: 10px;
   border: 0px;
-  border-right: 5px solid #03e020;
-  border-bottom: 5px solid #03e020;
+  border-right: 3px solid #182da1;
+  border-bottom: 3px solid #182da1;
   border-radius: 0px 0px 5px 0px;
   opacity: 0;
 }
