@@ -1,9 +1,10 @@
 import React from 'react';
-import Account from '../../assets/account.svg'
-const Input = ({ label, name, handleChange }) => (
+import Icons from './Icons';
+
+const Input = ({ label, name, icon, handleChange }) => (
     <div className="form-row">
-        <img src={Account} alt="account-image" />
         <input type={name === "password" ? "password" : "text"} id={name} name={name} onChange={handleChange} required autoComplete="off" />
+        <Icons icon={icon} />
         <label htmlFor={name}>{label}</label>
     </div>
 )
