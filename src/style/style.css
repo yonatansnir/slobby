@@ -7,8 +7,13 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f8f8f8;
+  background: #f3f3f3;
   min-height: 100vh;
+}
+
+.page h1 {
+  margin: 10px 30px;
+  color: #464646;
 }
 
 .btn {
@@ -20,7 +25,7 @@ body {
   border: none;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
-  border-radius: 20px;
+  border-radius: 4px;
   cursor: pointer;
   overflow: hidden;
   position: relative;
@@ -53,7 +58,7 @@ body {
           transform: translate(-50%, -50%) scale(0);
 }
 
-.btn-send {
+.btn-green {
   background: #03e020;
 }
 
@@ -72,9 +77,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #eeeeee;
+  background-color: white;
   padding: 5px 10px;
-  border-bottom: #cccccc solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 
 header h1 {
@@ -169,6 +174,14 @@ header h1 {
   transition: 0.5s;
 }
 
+.form-row input:valid ~ label {
+  color: transparent;
+}
+
+.form-row input:valid + .icon {
+  fill: #868686;
+}
+
 .form-row label {
   font-size: 0.8em;
   letter-spacing: 2px;
@@ -213,21 +226,31 @@ header h1 {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(25deg);
-          transform: translate(-50%, -50%) rotate(25deg);
-  width: 5px;
-  height: 10px;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  width: 3px;
+  height: 7px;
   border: 0px;
-  border-right: 5px solid #03e020;
-  border-bottom: 5px solid #03e020;
-  border-radius: 0px 0px 5px 0px;
+  border-right: 3px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
+  border-radius: 0px 0px 2px 0px;
   opacity: 0;
+}
+
+.check-box input:checked {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #868686;
 }
 
 .check-box input:checked::after {
   opacity: 1;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transform: translate(-50%, -50%) rotate(25deg);
+          transform: translate(-50%, -50%) rotate(25deg);
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
 }
 
 table {
@@ -252,7 +275,7 @@ table tbody tr:nth-child(even) {
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin: 50px auto;
-  text-align: left;
+  text-align: center;
   padding: 25px;
 }
 
