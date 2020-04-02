@@ -7,11 +7,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-<<<<<<< HEAD
-  background: #21abfc;
-=======
   background: #f3f3f3;
->>>>>>> login-btn
   min-height: 100vh;
 }
 
@@ -236,15 +232,9 @@ header h1 {
   width: 3px;
   height: 7px;
   border: 0px;
-<<<<<<< HEAD
-  border-right: 3px solid #182da1;
-  border-bottom: 3px solid #182da1;
-  border-radius: 0px 0px 5px 0px;
-=======
   border-right: 3px solid whitesmoke;
   border-bottom: 3px solid whitesmoke;
   border-radius: 0px 0px 2px 0px;
->>>>>>> login-btn
   opacity: 0;
 }
 
