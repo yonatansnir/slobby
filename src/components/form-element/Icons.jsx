@@ -2,7 +2,7 @@ import React from 'react';
 
 const Icons = ({ icon }) => {
 	switch (icon){
-		case "user":
+		case "key":
 			return (
 				<svg className="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					viewBox="0 0 512 512">
@@ -19,7 +19,7 @@ const Icons = ({ icon }) => {
 					</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
 				</svg>
 			)
-		case "key":
+		case "user":
 			return (
 				<svg className="icon" height="15px" viewBox="0 -32 512 512" width="15px" xmlns="http://www.w3.org/2000/svg">
 					<path d="m298.667969 106.667969c0 58.910156-47.757813 106.664062-106.667969 106.664062s-106.667969-47.753906-106.667969-106.664062c0-58.910157 47.757813-106.667969 106.667969-106.667969s106.667969 47.757812 106.667969 106.667969zm0 0"/>

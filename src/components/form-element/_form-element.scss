@@ -32,6 +32,14 @@
                 transition: 0.5s;
             }
         }
+        &:valid{
+            & ~ label{
+                color: transparent;
+            }
+            & + .icon{
+                fill: rgb(134, 134, 134);
+            }
+        }
     }
     label{
         font-size: 0.8em;
@@ -68,19 +76,31 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%, -50%) rotate(25deg);
-            width: 5px;
-            height: 10px;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            width: 3px;
+            height: 7px;
             border: 0px;
+<<<<<<< HEAD
             border-right: 3px solid #182da1;
             border-bottom: 3px solid #182da1;
             border-radius: 0px 0px 5px 0px;
+=======
+            border-right: 3px solid rgb(245, 245, 245);
+            border-bottom: 3px solid rgb(245, 245, 245);
+            border-radius: 0px 0px 2px 0px;
+>>>>>>> login-btn
             opacity: 0;
         }
 
-        &:checked::after{
-            opacity: 1;
+        &:checked{
             transition: 0.2s;
+            background-color: rgb(134, 134, 134);
+
+            &::after{
+                opacity: 1;
+                transform: translate(-50%, -50%) rotate(25deg);
+                transition: transform 0.1s linear;
+            }
         }
     }
 }

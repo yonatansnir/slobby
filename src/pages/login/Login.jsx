@@ -11,7 +11,8 @@ const Login = () => {
     }
 
     return(
-        <div className="login">
+        <div className="page login">
+            <h1>Login</h1>
             <form onSubmit={(e) => e.preventDefault()}>
                 <h2>WELCOME</h2>
                 <Input
@@ -31,7 +32,7 @@ const Login = () => {
                     name="keepSignIn"
                     handleChange={handleChange}
                 />
-                <Button text="LOGIN" styleClass="btn btn-send" handleClick={() => console.log('Hey')} />
+                <Button text="LOGIN" styleClass="btn btn-green" handleClick={() => console.log('Hey')} />
             </form>
         </div>
     )
