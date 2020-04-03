@@ -15,15 +15,15 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(50%, -50%) scale(0);
+        transform: translate(-50%, -50%) scale(0);
         border-radius: 50%;
         content: '';
         background-color: rgb(255, 255, 255);
         padding: 50%;
+        opacity: 0.1;
     }
     &:hover::after{
         transform: translate(-50%, -50%) scale(1);
-        opacity: 0.2;
         transition: linear 0.3s transform;
     }
     &:active::after{

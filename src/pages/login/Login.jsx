@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Input from '../../components/form-element/Input';
 import CheckBox from '../../components/form-element/CheckBox';
 import Button from '../../components/form-element/Button';
+import Icons from '../../components/form-element/Icons';
 
 const Login = () => {
     const [form, setForm] = useState({ user: '', password: '' })
@@ -14,7 +15,8 @@ const Login = () => {
         <div className="page login">
             <h1>Login</h1>
             <form onSubmit={(e) => e.preventDefault()}>
-                <h2>WELCOME</h2>
+                <Icons icon="account" />
+                <h2>WELCOME ABOURD</h2>
                 <Input
                     label="USER NAME"
                     name="user"

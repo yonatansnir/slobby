@@ -1,16 +1,16 @@
 .login{
     form{
         width: 400px;
-        height: 400px;
-        background-color: rgb(255, 255, 255);
+        background: linear-gradient(135deg, white 90%, rgb(12, 7, 95) 90%, rgb(12, 7, 95) 95%, white 95%);
         border: rgb(231, 231, 231) solid 1px;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         margin: 50px auto;
         text-align: center;
         padding: 25px;
+        position: relative;
         h2{
-            color: rgb(33, 67, 179);
+            color: rgb(12, 7, 95);
             margin-bottom: 20px;
         }
     }
