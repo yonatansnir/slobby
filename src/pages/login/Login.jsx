@@ -13,7 +13,6 @@ const Login = () => {
 
     return(
         <div className="page login">
-            <h1>Login</h1>
             <form onSubmit={(e) => e.preventDefault()}>
                 <Icons icon="account" />
                 <h2>WELCOME ABOURD</h2>

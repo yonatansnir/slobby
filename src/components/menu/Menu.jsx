@@ -3,7 +3,12 @@ import React from 'react';
 const Menu = () => {
     return(
         <div className="menu">
-            The menu will be here!
+            <h1>Slobby</h1>
+            <ul>
+                <li>Board</li>
+                <li>Users</li>
+                <li>Guest</li>
+            </ul>
         </div>
     )
 }

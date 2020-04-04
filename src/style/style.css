@@ -11,6 +11,10 @@ body {
   min-height: 100vh;
 }
 
+.wrapper {
+  padding: 0px;
+}
+
 .page h1 {
   margin: 10px 30px;
   color: #464646;
@@ -66,6 +70,7 @@ header .icon {
   width: 25px;
   height: 25px;
   margin: 0px 5px;
+  cursor: pointer;
 }
 
 .login .icon {
@@ -75,11 +80,26 @@ header .icon {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   z-index: 10;
+  left: -250px;
   width: 250px;
   height: 100vh;
-  background-color: rgba(255, 0, 0, 0.178);
+  background-color: white;
+  -webkit-box-shadow: 1px 0px 2px #dddddd;
+          box-shadow: 1px 0px 2px #dddddd;
+  border-right: 1px solid #dddddd;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  background-color: #eeeeee;
+  border: 1px solid lightgray;
+  border-right: 2px solid red;
+  padding: 5px 10px;
 }
 
 header {
@@ -108,13 +128,6 @@ header div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-header .user-name {
-  border: 1px solid #7f63ce;
-  border-radius: 50px;
-  padding: 5px;
-  color: #616161;
 }
 
 .hamburger {
@@ -309,6 +322,12 @@ table tbody tr:nth-child(even) {
   text-align: center;
   padding: 25px;
   position: relative;
+}
+
+@media (max-width: 600px) {
+  .login form {
+    width: 97%;
+  }
 }
 
 .login form h2 {

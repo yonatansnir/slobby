@@ -9,6 +9,9 @@
         text-align: center;
         padding: 25px;
         position: relative;
+        @media #{$bp-small}{
+            width: 97%;
+        }
         h2{
             color: rgb(12, 7, 95);
             margin-bottom: 20px;
