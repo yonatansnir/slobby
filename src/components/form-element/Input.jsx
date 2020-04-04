@@ -1,5 +1,5 @@
 import React from 'react';
-import Icons from './Icons';
+import Icons from '../Icons/Icons';
 
 const Input = ({ label, name, icon, handleChange }) => (
     <div className="form-row">

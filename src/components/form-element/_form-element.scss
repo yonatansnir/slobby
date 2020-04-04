@@ -1,7 +1,8 @@
 .form-row{
     position: relative;
     margin-bottom: 25px;
-    .icon{
+
+    .icon-input{
         width: 15px;
         position: absolute;
         top: 50%;
@@ -27,7 +28,7 @@
                 color: transparent;
                 transition: 0.2s;
             }
-            & + .icon{
+            & + .icon-input{
                 fill: rgb(134, 134, 134);
                 transition: 0.5s;
             }
