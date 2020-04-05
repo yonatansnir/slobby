@@ -15,7 +15,7 @@ body {
   padding: 0px;
 }
 
-.page h1 {
+.page h2 {
   margin: 10px 30px;
   color: #464646;
 }
@@ -298,17 +298,54 @@ header div {
   transition: transform 0.1s linear, -webkit-transform 0.1s linear;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
+.tasks {
+  margin: 20px;
 }
 
-table tbody tr:nth-child(odd) {
-  background-color: indianred;
+.tasks ul {
+  list-style: none;
 }
 
-table tbody tr:nth-child(even) {
-  background-color: lightcoral;
+.tasks ul li {
+  padding: 5px 10px;
+}
+
+.tasks ul .check-box {
+  margin: 0px;
+}
+
+.tasks ul li:nth-child(odd) {
+  background-color: #d3e4fd;
+}
+
+.tasks ul li:nth-child(even) {
+  background-color: #b1fff5;
+}
+
+.tasks ul .completed {
+  text-decoration: line-through;
+}
+
+.notes {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.notes .note-item {
+  border: 1px solid black;
+  background: linear-gradient(to bottom, yellow 18px, black 18px, black 20px, yellow 20px);
+  line-height: 20px;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 200px;
+  height: 200px;
 }
 
 .login form {
