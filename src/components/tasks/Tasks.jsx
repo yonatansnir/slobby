@@ -3,11 +3,11 @@ import TaskItem from './TaskItem';
 
 const Tasks = () => {
     const [tasks, setTasks] = useState([
-        {id: 1, title: 'first', completed: false},
-        {id: 2, title: 'first', completed: true},
-        {id: 3, title: 'first', completed: false},
-        {id: 4, title: 'first', completed: false},
-        {id: 5, title: 'first', completed: false}
+        {id: 1, title: 'firs task', completed: false},
+        {id: 2, title: 'you must know the lol', completed: true},
+        {id: 3, title: 'its working fine i think', completed: false},
+        {id: 4, title: 'Now everything good', completed: false},
+        {id: 5, title: 'Yes Yes Yes', completed: false}
     ])
     
     // NOT WORKING YET.
@@ -20,7 +20,7 @@ const Tasks = () => {
     return (
         <div className="tasks">
             <ul>
-                {tasks.map(task => <TaskItem task={task} />)}
+                {tasks.map(task => <TaskItem task={task} handleChange={handleChange} />)}
             </ul>
         </div>
     )

@@ -5,7 +5,7 @@ import Button from '../../components/form-element/Button';
 import Icons from '../../components/Icons/Icons';
 
 const Login = () => {
-    const [form, setForm] = useState({ user: '', password: '' })
+    const [form, setForm] = useState({ user: '', password: '', keepSignIn: false })
 
     const handleChange = (e) => {
         setForm({...form, [e.target.name]: e.target.value})
@@ -31,9 +31,10 @@ const Login = () => {
                 <CheckBox
                     label="Keep Me Sign In"
                     name="keepSignIn"
-                    handleChange={handleChange}
+                    check={form.keepSignIn}
+                    handleChange={() => setForm({...form, keepSignIn: !form.keepSignIn})}
                 />
-                <Button text="LOGIN" styleClass="btn btn-green" handleClick={() => console.log('Hey')} />
+                <Button text="LOGIN" styleClass="btn btn-green" handleClick={() => console.log(form)} />
             </form>
         </div>
     )

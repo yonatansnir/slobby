@@ -2,7 +2,12 @@ import React from 'react';
 
 const NoteItem = ({ note }) => (
     <div className="note-item">
-        {note.title}
+        <div className="delete">X</div>
+        Here text will enter <br /> you must understand this
+        Here text will enter <br /> you must understand this
+        Here text will enter <br /> you must understand this
+        Here text will enter <br /> you must understand this
+        Here text will enter <br /> you must understand this
     </div>
 )
 

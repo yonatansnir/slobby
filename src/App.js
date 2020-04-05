@@ -3,8 +3,7 @@ import React from 'react';
 import Menu from './components/menu/Menu';
 import Login from './pages/login/Login';
 import Header from './components/header/Header';
-import Tasks from './components/tasks/Tasks';
-import Notes from './components/notes/Notes';
+import TasksNotes from './pages/TasksNotes/TasksNotes';
 
 const App = () => {
   return(
@@ -12,8 +11,7 @@ const App = () => {
       <Menu />
       <Header />
       {/* <Login /> */}
-      {/* <Tasks /> */}
-      <Notes />
+      <TasksNotes />
     </div>
   )
 }
