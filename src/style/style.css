@@ -408,4 +408,65 @@ header div {
   color: #0c075f;
   margin-bottom: 20px;
 }
+
+.page table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.page table tbody td {
+  padding: 5px 10px;
+}
+
+.page table tbody tr:nth-child(odd) {
+  background-color: #f6fbff;
+}
+
+.page table tbody tr:nth-child(even) {
+  background-color: #eef5ff;
+}
+
+@media (max-width: 600px) {
+  .page table thead {
+    display: none;
+  }
+  .page table tr, .page table td {
+    display: block;
+    position: relative;
+  }
+  .page table tbody tr::after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 30%;
+    height: 100%;
+    background-color: rgba(7, 7, 7, 0.116);
+  }
+  .page table tbody td {
+    padding-left: 32%;
+  }
+  .page table tbody td::after {
+    position: absolute;
+    padding: 5px 10px;
+    top: 0px;
+    left: 0px;
+    font-weight: 500;
+  }
+  .page table tbody td:nth-child(1)::after {
+    content: 'ID';
+  }
+  .page table tbody td:nth-child(2)::after {
+    content: 'Name';
+  }
+  .page table tbody td:nth-child(3)::after {
+    content: 'Email';
+  }
+  .page table tbody td:nth-child(4)::after {
+    content: 'Position';
+  }
+  .page table tbody td:nth-child(5)::after {
+    content: 'Actions';
+  }
+}
 /*# sourceMappingURL=style.css.map */
