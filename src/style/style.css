@@ -15,9 +15,19 @@ body {
   padding: 0px;
 }
 
+.page {
+  min-height: 100%;
+}
+
 .page h2 {
   margin: 10px 30px;
   color: #464646;
+}
+
+.page .content {
+  min-height: 100%;
+  background-color: white;
+  padding: 5px;
 }
 
 .btn {
