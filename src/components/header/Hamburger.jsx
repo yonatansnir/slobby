@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Hamburger = () => {
+    const [clickMenu, setClickMenu] = useState(true)
+
     return(
-        <div className="hamburger">
+        <div 
+            className={clickMenu ? 'hamburger close' : 'hamburger open' } 
+            onClick={()=> setClickMenu(!clickMenu)}>
+            <span></span>
+            <span></span>
+            <span></span>
             <span></span>
             <span></span>
             <span></span>
