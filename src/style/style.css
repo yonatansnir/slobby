@@ -85,11 +85,10 @@ header .icon {
   fill: #0c075f;
 }
 
-.menu {
+.sidenav {
   position: fixed;
   z-index: 10;
-  left: -250px;
-  width: 250px;
+  top: 56px;
   height: 100vh;
   background-color: white;
   -webkit-box-shadow: 1px 0px 2px #dddddd;
@@ -97,15 +96,35 @@ header .icon {
   border-right: 1px solid #dddddd;
 }
 
-.menu ul {
-  list-style: none;
-}
-
-.menu ul li {
+.sidenav .menuItem {
   background-color: #eeeeee;
   border: 1px solid lightgray;
-  border-right: 2px solid red;
+  border-right: 2px solid #DE1E1E;
   padding: 5px 10px;
+}
+
+.sidenav .menuItem:active {
+  border-right-color: #256D2C;
+}
+
+.sidenav.close {
+  left: -250px;
+}
+
+.sidenav.open {
+  left: 0;
+}
+
+@media (max-width: 680px) {
+  .sidenav {
+    width: 100%;
+  }
+}
+
+@media (min-width: 681px) {
+  .sidenav {
+    width: 250px;
+  }
 }
 
 header {

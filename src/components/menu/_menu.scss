@@ -1,19 +1,32 @@
-.menu{
+.sidenav{
     position: fixed;
     z-index: 10;
-    left: -250px;
-    width: 250px;
+    top: 56px;
     height: 100vh;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 0px 2px rgb(221, 221, 221);
     border-right: 1px solid rgb(221, 221, 221);
-    ul{
-        list-style: none;
-        li{
-            background-color: rgb(238, 238, 238);
-            border: 1px solid rgb(211, 211, 211);
-            border-right: 2px solid red;
-            padding: 5px 10px;
+ 
+    .menuItem{
+        background-color: rgb(238, 238, 238);
+        border: 1px solid rgb(211, 211, 211);
+        border-right: 2px solid #DE1E1E;
+        padding: 5px 10px;
+        &:active{
+            border-right-color: #256D2C ;
         }
     }
+    &.close{
+        left: -250px;
+    }
+    &.open{
+        left: 0;
+    }
+   @media #{$break1}{
+        width: 100%;
+   }
+   @media #{$break2open}{
+         width: 250px;
+   }
+
 }
