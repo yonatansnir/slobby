@@ -1,22 +1,18 @@
 import React from 'react';
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-import ListItemText from '@material-ui/core/ListItemText'
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 
-const Menu = () => {
+const Menu = ({ items, openMenu }) => {
     return(
-        <div className="sidenav">
-            <List disablePadding dense>
-                <ListItem className="menuItem" button>
-                    <ListItemText>Board</ListItemText>
+        <div className={openMenu ? "sidenav open" : "sidenav close"}>
+            <List className="menu-list" disablePadding dense>
+                {items.map(({ label, name, ...rest }) => (
+                <ListItem className="menu-item" key={name} button {...rest}>
+                    <ListItemText>{label}</ListItemText>
                 </ListItem>
-                <ListItem className="menuItem" button>
-                    <ListItemText>Users</ListItemText>
-                </ListItem>
-                <ListItem className="menuItem" button>
-                    <ListItemText>Guest</ListItemText>
-                </ListItem>
-            </List>
+                ))}
+            </List>   
         </div>
     )
 }
