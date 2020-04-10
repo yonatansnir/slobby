@@ -1,12 +1,24 @@
 import React from 'react';
-import Input from '../../components/form-element/Input';
+import Button from '../../components/form-element/Button';
+import Icons from '../../components/Icons/Icons';
+import AddUser from '../../components/users/AddUser';
 
 const Users = () => {
     return(
         <div className="page">
             <h2>Users Page</h2>
             <div className="content">
-                <Input label="Search" name="searchField" icon="search" />
+                <div className="search-field">
+                    <input type="text" placeholder="Just start type..." /><Icons icon="search" />
+                    <Button
+                        text="Add New User"
+                        styleClass="btn btn-green"
+                        handleClick={() => alert('hello world')}
+                    />
+                </div>
+                <div className="login">
+                    <AddUser />
+                </div>
                 <table>
                     <thead>
                         <tr>
