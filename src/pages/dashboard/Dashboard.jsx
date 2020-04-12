@@ -1,13 +1,19 @@
-import React, { Fragment } from 'react';
-import Header from '../../components/header/Header';
-import Table from '../../components/table/Table';
+import React from 'react';
+import Card from '../../components/card/Card';
 
 const Dashboard = () => {
     return(
-        <Fragment>
-            <Header />
-            <Table />
-        </Fragment>
+        <div className="page">
+            <h2>Dashboard</h2>
+            <div className="content dashboard">
+                <div className="row">
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
+            </div>
+        </div>
     )
 }
 

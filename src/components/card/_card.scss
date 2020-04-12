@@ -1,0 +1,13 @@
+.card{
+    background: red;
+    border-radius: 5px;
+    height: 100px;
+    width: 24%;
+    margin-bottom: 20px;
+    padding: 10px;
+    @media #{$bp-small}{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}

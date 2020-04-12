@@ -1,0 +1,9 @@
+.dashboard{
+    .row{
+        display: flex;
+        justify-content: space-between;
+        @media #{$bp-small}{
+            flex-direction: column;
+        }
+    }
+}

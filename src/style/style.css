@@ -76,6 +76,10 @@ body {
   background: #03e020;
 }
 
+.btn-blue {
+  background: #2f2f85;
+}
+
 header .icon {
   border-radius: 50%;
   width: 30px;
@@ -212,6 +216,23 @@ header div {
 
 .dropdown li:nth-child(even) {
   background-color: #f4f2fd;
+}
+
+.card {
+  background: red;
+  border-radius: 5px;
+  height: 100px;
+  width: 24%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }
 
 .form-row {
@@ -451,6 +472,24 @@ header div {
 .login form h2 {
   color: #0c075f;
   margin-bottom: 20px;
+}
+
+.dashboard .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .dashboard .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .page .search-field {
