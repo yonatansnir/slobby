@@ -26,6 +26,12 @@ body {
   padding: 5px;
 }
 
+.icon-input.small {
+  width: 15px;
+  height: 15px;
+}
+
+/*** LTR websites ***/
 .btn {
   padding: 8px 50px;
   outline: none;
@@ -72,7 +78,6 @@ body {
   background: #03e020;
 }
 
-/*** LTR websites ***/
 header .icon {
   width: 25px;
   height: 25px;

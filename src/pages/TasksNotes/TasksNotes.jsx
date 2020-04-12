@@ -7,7 +7,7 @@ const TasksNotes = () => {
     return(
         <div className="page">
             <Tasks />
-            <Notes />
+            <Notes />    
         </div>
     )
 }

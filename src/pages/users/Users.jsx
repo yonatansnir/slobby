@@ -4,7 +4,7 @@ import Input from '../../components/form-element/Input';
 const Users = () => {
     return(
         <div className="page">
-            <h2>Users Page</h2>
+            <h2>Users Page</h2>  
             <div className="content">
                 <Input label="Search" name="searchField" icon="search" />
                 <table>
