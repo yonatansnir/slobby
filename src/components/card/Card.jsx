@@ -1,8 +1,11 @@
 import React from 'react';
+import CardIcon from '../Icons/CardIcon';
 
-const Card = () => (
+const Card = ({ data }) => (
     <div className="card">
-        <h3>Info about something</h3>
+        <h4>{data.text}</h4>
+        <h3>{data.number}</h3>
+        <CardIcon name={data.text} />
     </div>
 )
 

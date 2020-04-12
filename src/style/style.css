@@ -219,20 +219,54 @@ header div {
 }
 
 .card {
-  background: red;
+  background: #ececec;
+  position: relative;
   border-radius: 5px;
+  border: 1px solid #e7e7e7;
   height: 100px;
   width: 24%;
   margin-bottom: 20px;
   padding: 10px;
+  -webkit-box-shadow: 0px 2px 0px lightgray;
+          box-shadow: 0px 2px 0px lightgray;
 }
 
 @media (max-width: 600px) {
   .card {
-    width: 90%;
+    width: 80%;
     margin: auto;
     margin-bottom: 20px;
   }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .card {
+    width: 45%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.card h4 {
+  font-weight: 500;
+  color: #a8a8a8;
+}
+
+.card h3 {
+  font-size: 1.8em;
+}
+
+.card svg {
+  position: absolute;
+  border-radius: 50px;
+  background: white;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 5px;
+  height: 50%;
+  fill: black;
 }
 
 .form-row {
@@ -475,9 +509,12 @@ header div {
 }
 
 .dashboard .row {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

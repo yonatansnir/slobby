@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { useSelector } from 'react-redux';
+
 import Menu from './components/menu/Menu';
 import Login from './pages/login/Login';
 import Header from './components/header/Header';
@@ -9,14 +11,19 @@ import Log from './pages/log/Log';
 import Dashboard from './pages/dashboard/Dashboard';
 
 const App = () => {
+  const user = useSelector(state => state.user);
+
   return(
     <div className="wrapper">
       <Menu />
       <Header />
-      <Dashboard />
+      {user ? <Login /> : 
+        
+        <Dashboard />
+      
+      }
       {/* <Log /> */}
       {/* <Users /> */}
-      {/* <Login /> */}
       {/* <TasksNotes /> */}
     </div>
   )

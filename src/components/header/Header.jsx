@@ -32,7 +32,7 @@ const Header = () => {
                 <Icons icon="bell" showDropDown={showDropDown} />
                 <Icons icon="account" showDropDown={showDropDown} />
                 {dropdown === "user-menu" ? <UserDD /> : "" }
-                <div>{user.name.toUpperCase()}</div>
+                <div>{user ? user.name.toUpperCase() : ""}</div>
             </div>
         </header>
     )

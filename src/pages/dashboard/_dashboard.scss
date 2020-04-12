@@ -1,6 +1,8 @@
 .dashboard{
     .row{
+        margin-top: 10px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         @media #{$bp-small}{
             flex-direction: column;

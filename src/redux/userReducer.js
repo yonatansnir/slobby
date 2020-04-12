@@ -1,7 +1,7 @@
-const INITIAL_STATE = {id: 1, name: "ADMIN", email: "admin@admin.com", password: "123456"}
-
-export const userReducer = (state = INITIAL_STATE, action) => {
+export const userReducer = (state = false, action) => {
     switch (action.type){
+        case "LOGIN":
+            return action.payload;
         default:
             return state;
     }
