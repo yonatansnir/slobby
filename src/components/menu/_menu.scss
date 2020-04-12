@@ -6,15 +6,15 @@
     height: 100vh;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 0px 2px rgb(221, 221, 221);
-    border-right: 1px solid rgb(221, 221, 221);
+    border-#{$end-direction}: 1px solid rgb(221, 221, 221);
     
     .menu-item{
         background-color: rgb(238, 238, 238);
         border: 1px solid rgb(211, 211, 211);
-        border-right: 2px solid #DE1E1E;
+        border-#{$end-direction}: 2px solid #DE1E1E;
         padding: 5px 10px;
         &:active{
-            border-right-color: #256D2C ;
+            border-#{$end-direction}-color: #256D2C ;
         }
     }
     .menu-list{

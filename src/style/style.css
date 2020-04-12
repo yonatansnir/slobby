@@ -72,6 +72,7 @@ body {
   background: #03e020;
 }
 
+/*** LTR websites ***/
 header .icon {
   width: 25px;
   height: 25px;
@@ -377,7 +378,7 @@ header div {
   width: 3px;
   height: 7px;
   border: 0px;
-  border-right: 3px solid whitesmoke;
+  borderright: 3px solid whitesmoke;
   border-bottom: 3px solid whitesmoke;
   border-radius: 0px 0px 2px 0px;
   opacity: 0;

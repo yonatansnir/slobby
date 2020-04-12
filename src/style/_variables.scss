@@ -1,8 +1,17 @@
 //breakpoints
-$bp-small: "(max-width: 600px)";
+$bp-small:  "(max-width: 600px)";
 $bp-medium: "(min-width: 601px)";
 
-$break1: "(max-width: 680px)";
-$break2: "(min-width: 681px) and (max-width: 980px)";
+$break1:     "(max-width: 680px)";
+$break2:     "(min-width: 681px) and (max-width: 980px)";
 $break2open: "(min-width: 681px)";
 $break3open: "(min-width: 981px)";
+
+
+/*** LTR websites ***/
+$direction            :ltr;
+$opposite-direction   :rtl;
+
+$start-direction      :left;
+$end-direction        :right;
+
