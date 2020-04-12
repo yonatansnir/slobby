@@ -1,16 +1,18 @@
 import React, {useState} from 'react';
 import Menu from '../menu/Menu'
 
-const items = [
-    { name: 'board', label: 'Board' },
-    { name: 'users', label: 'Users' },
-    { name: 'guest', label: 'Guest' },
-  ]
 
 const Hamburger = () => {
     const [clickMenu, setClickMenu] = useState(true);
 
     const [openMenu, setOpenMenu] = useState(false);
+
+    const items = [
+        { name: 'board', label: 'Board' },
+        { name: 'users', label: 'Users' },
+        { name: 'guest', label: 'Guest' },
+      ]
+    
  
     const handleMenuClick = () =>{
         setClickMenu(!clickMenu);
