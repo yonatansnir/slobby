@@ -219,7 +219,7 @@ header div {
 }
 
 .card {
-  background: #ececec;
+  background: #f3f3f3;
   position: relative;
   border-radius: 5px;
   border: 1px solid #e7e7e7;
@@ -266,7 +266,27 @@ header div {
           transform: translateY(-50%);
   padding: 5px;
   height: 50%;
-  fill: black;
+  fill: white;
+}
+
+.Complaints svg {
+  fill: #e90000;
+  background: #ffcfcf;
+}
+
+.Packages svg {
+  fill: #ff9100;
+  background: #ffeac9;
+}
+
+.Tasks svg {
+  fill: #0b0bad;
+  background: #cfcfff;
+}
+
+.Guests svg {
+  fill: #00d300;
+  background: #d5ffd5;
 }
 
 .form-row {

@@ -2,7 +2,7 @@ import React from 'react';
 import CardIcon from '../Icons/CardIcon';
 
 const Card = ({ data }) => (
-    <div className="card">
+    <div className={`card ${data.text}`}>
         <h4>{data.text}</h4>
         <h3>{data.number}</h3>
         <CardIcon name={data.text} />
