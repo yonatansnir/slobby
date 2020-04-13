@@ -6,7 +6,7 @@ import AddUser from '../../components/users/AddUser';
 const Users = () => {
     return(
         <div className="page">
-            <h2>Users Page</h2>
+            <h2>Users Page</h2>  
             <div className="content">
                 <div className="search-field">
                     <input type="text" placeholder="Just start type..." /><Icons icon="search" />

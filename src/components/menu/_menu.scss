@@ -1,19 +1,53 @@
-.menu{
+.sidenav{
+    align-items: flex-start;
     position: fixed;
     z-index: 10;
-    left: -250px;
-    width: 250px;
+    top: 56px;
     height: 100vh;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 0px 2px rgb(221, 221, 221);
-    border-right: 1px solid rgb(221, 221, 221);
-    ul{
-        list-style: none;
-        li{
-            background-color: rgb(238, 238, 238);
-            border: 1px solid rgb(211, 211, 211);
-            border-right: 2px solid red;
-            padding: 5px 10px;
+    border-#{$end-direction}: 1px solid rgb(221, 221, 221);
+    
+    .menu-item{
+        background-color: rgb(238, 238, 238);
+        border: 1px solid rgb(211, 211, 211);
+        border-#{$end-direction}: 2px solid #DE1E1E;
+        padding: 5px 10px;
+        &:active{
+            border-#{$end-direction}-color: #256D2C ;
         }
     }
+    .menu-list{
+         color:transparent;
+        transition: all 0.5s, color 2s;
+    }
+    &.close{
+        left: -250px;
+       
+    }
+    &.open{
+        left: 0;
+        .menu-list{
+            color: #333;
+        }
+    }
+   @media #{$break1}{
+    &.open{
+        .menu-list{
+            width: calc(100vw - 2px);
+        }
+    }       
+   }
+   @media #{$break2open}{
+       .menu-list{
+        width: 0;
+       }
+    &.open{
+        .menu-list{
+            width: 250px;
+        }
+    }  
+        
+   }
+
 }
