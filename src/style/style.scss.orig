@@ -3,7 +3,7 @@
 @import './config/direction-ltr';
 @import './button';
 
-@import '../components/Icons/icons';
+@import '../components/Icons/icons';   
 
 // Importing Components
 @import '../components/menu/menu';
@@ -19,5 +19,7 @@
 // Importing Pages
 @import '../pages/login/login';
 @import '../pages/dashboard/dashboard';
-@import '../pages/users/users';  
+@import '../pages/users/users';
+
+     
 

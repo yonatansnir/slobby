@@ -1,0 +1,25 @@
+
+*{ box-sizing: border-box; padding: 0px; margin: 0px; }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(243, 243, 243);
+    min-height: 100vh;
+}
+.wrapper{
+    padding: 0px;
+}
+.hide{
+    display: none;
+}
+.page{
+    h2{
+        margin: 10px 30px;
+        color: rgb(70, 70, 70);
+    }
+    .content{
+        min-height: 100%;
+        background-color: white;
+        padding: 5px;
+
+    }
+}
