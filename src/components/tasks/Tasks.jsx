@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TaskItem from './TaskItem';
-
+import Input from '../../components/form-element/Input';
+import Button from '../form-element/Button';
 const Tasks = () => {
     const [tasks, setTasks] = useState([
         {id: 1, title: 'firs task', completed: false},
@@ -10,7 +11,6 @@ const Tasks = () => {
         {id: 5, title: 'Yes Yes Yes', completed: false}
     ])
     
-    // NOT WORKING YET.
     const handleChange = (id) => {
         let arr = [...tasks];
         let i = arr.findIndex(t => t.id === id);
@@ -19,6 +19,10 @@ const Tasks = () => {
     }
     return (
         <div className="tasks">
+            <div className="add-tasks-form">
+                <input type="text" />
+                <button className="btn btn-blue">ADD</button>
+            </div>
             <ul>
                 {tasks.map(task => <TaskItem task={task} handleChange={handleChange} />)}
             </ul>

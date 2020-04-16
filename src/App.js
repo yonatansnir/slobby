@@ -16,14 +16,14 @@ const App = () => {
   return(
     <div className="wrapper">
       <Header />
-      {user ? <Login /> : 
+      {user ? <Login /> : ""
         
-        <Dashboard />
+        // <Dashboard />
       
       }
       {/* <Log /> */}
       {/* <Users /> */}
-      {/* <TasksNotes /> */}
+      <TasksNotes />
     </div>
   )
 }
