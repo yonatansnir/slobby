@@ -5,7 +5,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
-const Menu = ({ openMenu }) => {
+const Menu = ({ openMenu, setOpenMenu }) => {
     
     const items = [
         { name: 'dashboard', url:'/', label: 'Dashboard' },
@@ -17,7 +17,7 @@ const Menu = ({ openMenu }) => {
             <List className="menu-list" disablePadding dense>
                 {items.map(({ label, name, url, ...rest }) => (
                 <ListItem  className="menu-item" key={name} button {...rest}>
-                    <ListItemText><Link to = {`${url}`}>{label}</Link></ListItemText> 
+                    <ListItemText><Link onClick={() => setOpenMenu(!openMenu)} to = {`${url}`}>{label}</Link></ListItemText> 
                 </ListItem>
                 ))}
             </List>   
