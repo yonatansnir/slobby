@@ -20,6 +20,7 @@ const Hamburger = () => {
     const handleMenuClick = () =>{
         setClickMenu(!clickMenu);
         setOpenMenu(!openMenu);
+        
     }
     return(
         <React.Fragment>

@@ -13,10 +13,10 @@ const Menu = ({ openMenu }) => {
         { name: 'users', url: '/users', label: 'Users' },
       ]
     return(
-        <div className={openMenu ? "sidenav open" : "sidenav close"}>
+        <div className={openMenu ? "sidenav open" : "sidenav close"} >
             <List className="menu-list" disablePadding dense>
                 {items.map(({ label, name, url, ...rest }) => (
-                <ListItem className="menu-item" key={name} button {...rest}>
+                <ListItem  className="menu-item" key={name} button {...rest}>
                     <ListItemText><Link to = {`${url}`}>{label}</Link></ListItemText> 
                 </ListItem>
                 ))}

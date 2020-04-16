@@ -30,6 +30,10 @@ body {
   padding: 5px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*** LTR websites ***/
 .btn {
   padding: 8px 30px;
@@ -109,7 +113,7 @@ header .icon:hover {
           align-items: flex-start;
   position: fixed;
   z-index: 10;
-  top: 56px;
+  top: 53px;
   height: 100vh;
   background-color: white;
   -webkit-box-shadow: 1px 0px 2px #dddddd;
@@ -126,6 +130,10 @@ header .icon:hover {
 
 .sidenav .menu-item:active {
   border-right-color: #256D2C;
+}
+
+.sidenav .menu-item a {
+  color: #464646;
 }
 
 .sidenav .menu-list {
