@@ -1,17 +1,20 @@
 import React, {useState} from 'react';
-import Menu from '../menu/Menu'
+import Menu from '../menu/Menu';
+
+import {
+    Switch, Route, Link
+  } from "react-router-dom";
 
 
 const Hamburger = () => {
     const [clickMenu, setClickMenu] = useState(true);
-
     const [openMenu, setOpenMenu] = useState(false);
-
+/* 
     const items = [
-        { name: 'board', label: 'Board' },
-        { name: 'users', label: 'Users' },
-        { name: 'guest', label: 'Guest' },
-      ]
+        { name: 'TasksNotes', label: 'Tasks Notes' },
+        { name: 'Users', label: 'Users' },
+        { name: 'Dashboard', label: 'Dashboard' },
+      ] */
     
  
     const handleMenuClick = () =>{
@@ -31,7 +34,7 @@ const Hamburger = () => {
                 <span></span>
                 <span></span>
             </div>
-            <Menu items = {items} openMenu = {openMenu} setOpenMenu = {setOpenMenu}/>
+            <Menu openMenu = {openMenu} setOpenMenu = {setOpenMenu} />
         </React.Fragment>
     )
 }

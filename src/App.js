@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { useSelector } from 'react-redux';
+import { Switch, Route} from 'react-router-dom';
 
 import Menu from './components/menu/Menu';
 import Login from './pages/login/Login';
@@ -16,14 +17,21 @@ const App = () => {
   return(
     <div className="wrapper">
       <Header />
-      {user ? <Login /> : ""
+     {/*  {user ? <Login /> : ""
         
         // <Dashboard />
       
-      }
+      } */}
       {/* <Log /> */}
       {/* <Users /> */}
-      <TasksNotes />
+      {/* <TasksNotes /> */}
+
+      <Switch>
+        <Route exact path="/" component={Dashboard} />
+        <Route path="/users" component={Users} />
+        <Route path="/tasknotes" component={TasksNotes} />
+      </Switch>
+
     </div>
   )
 }
