@@ -6,7 +6,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
 const Menu = ({ openMenu, setOpenMenu }) => {
-    
     const items = [
         { name: 'dashboard', url:'/', label: 'Dashboard' },
         { name: 'tasknotes', url:'/tasknotes', label: 'Tasks Notes' },

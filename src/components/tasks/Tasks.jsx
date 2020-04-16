@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import TaskItem from './TaskItem';
-import Input from '../../components/form-element/Input';
-import Button from '../form-element/Button';
+
 const Tasks = () => {
     const [tasks, setTasks] = useState([
         {id: 1, title: 'firs task', completed: false},

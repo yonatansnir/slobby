@@ -17,20 +17,16 @@ const App = () => {
   return(
     <div className="wrapper">
       <Header />
-     {/*  {user ? <Login /> : ""
-        
-        // <Dashboard />
-      
-      } */}
+      {user ? <Login /> :
+        <Switch>
+          <Route exact path="/" component={Dashboard} />
+          <Route path="/users" component={Users} />
+          <Route path="/tasknotes" component={TasksNotes} />
+        </Switch>
+      }
       {/* <Log /> */}
       {/* <Users /> */}
       {/* <TasksNotes /> */}
-
-      <Switch>
-        <Route exact path="/" component={Dashboard} />
-        <Route path="/users" component={Users} />
-        <Route path="/tasknotes" component={TasksNotes} />
-      </Switch>
 
     </div>
   )
