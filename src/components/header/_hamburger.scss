@@ -27,11 +27,11 @@
   }
   span:nth-child(3), 
   span:nth-child(4) {
-      top: 12px;
+      top: 10px;
   }
   span:nth-child(5),
   span:nth-child(6) {
-     top: 24px;
+     top: 20px;
   }
   &.close:hover span:nth-child(6){
       width: 50%;
@@ -54,11 +54,11 @@
       }
       span:nth-child(1) {
           #{$start-direction}: 5px;
-          top: 5px;
+          top: 7px;
       }
       span:nth-child(2) {
           #{$start-direction}: calc(50% + 5px);
-          top: 5px;
+          top: 7px;
       }
       span:nth-child(3) {
           #{$start-direction}: -50%;
