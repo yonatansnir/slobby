@@ -5,4 +5,4 @@ export const allUsersReducer = (state = [], action) => {
         default:
             return state;
     }
-}
+} 
