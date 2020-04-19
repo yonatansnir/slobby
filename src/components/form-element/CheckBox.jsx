@@ -1,8 +1,8 @@
 import React from 'react';
 
-const CheckBox = ({ label, name, check, handleChange }) => (
+const CheckBox = ({ label, name, check, updateTasks }) => (
     <>
-        <label className="check-box"><input type="checkbox" name={name} checked={check} onChange={handleChange} /> {label} </label>
+        <label className="check-box"><input type="checkbox" name={name} checked={check} onChange={updateTasks} /> {label} </label>
     </>
 )
 
