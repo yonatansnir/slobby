@@ -1,5 +1,8 @@
 .tasks{
     margin: 20px;
+    background-color: $content-bg;
+    padding: 10px;
+    border: 1px solid $border-color;
 
     .add-tasks-form{
         display: flex;
