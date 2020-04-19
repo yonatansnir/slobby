@@ -3,8 +3,8 @@ import CardIcon from '../Icons/CardIcon';
 
 const Card = ({ data }) => (
     <div className={`card ${data.text}`}>
-        <h4>{data.text}</h4>
         <h3>{data.number}</h3>
+        <h4>{data.text}</h4>
         <CardIcon name={data.text} />
     </div>
 )
