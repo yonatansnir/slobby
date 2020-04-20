@@ -2,10 +2,12 @@ import React from 'react';
 
 const UserDD = () => (
     <ul className="dropdown">
-        <li>Item one</li>
-        <li>Item one</li>
-        <li>Item one</li>
-        <li>Item one</li>
+        Hello USERNAME
+        <li>Profile</li>
+        <li>Message</li>
+        <li>Friends</li>
+        <li>Rating</li>
+        Logout
     </ul>
 )
 

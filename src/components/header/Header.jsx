@@ -4,22 +4,24 @@ import { useSelector } from 'react-redux';
 import Hamburger from './Hamburger';
 import Icons from '../Icons/Icons';
 import UserDD from '../dropdown/UserDD';
+import NotificationsDD from '../dropdown/NotificationsDD';
 
 
 const Header = () => {
-    const [dropdown, setDropdown] = useState("")
+    const [showDp, setShopDp] = useState('');
     const user = useSelector(state => state.user);
 
     const showDropDown = (which) => {
         if (which === "notifications"){
-            setDropdown("notifications")
-            return;
+            setShopDp('notifications')
         }
-        if (which === "user-menu"){
-            setDropdown("user-menu")
-            return;
+        if (which === "account-dp"){
+            setShopDp('account-dp')
         }
-        setDropdown("")
+        if (which === showDp){
+            setShopDp('')
+        }
+
     }
 
     return(
@@ -29,9 +31,14 @@ const Header = () => {
                 <h1>Slobby</h1>
             </div>
             <div>
-                <Icons icon="bell" showDropDown={showDropDown} />
-                <Icons icon="account" showDropDown={showDropDown} />
-                {dropdown === "user-menu" ? <UserDD /> : "" }
+                <div onClick={() => showDropDown('notifications')}>
+                    <Icons icon="bell" />
+                    {showDp === "notifications" ? <NotificationsDD /> : "" }
+                </div>
+                <div onClick={() => showDropDown('account-dp')}>
+                    <Icons icon="account"/>
+                    {showDp === "account-dp" ? <UserDD /> : "" }
+                </div>
                 <div>{user ? user.name.toUpperCase() : ""}</div>
             </div>
         </header>
