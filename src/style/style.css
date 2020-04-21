@@ -395,7 +395,7 @@ header div {
   width: 3px;
   height: 7px;
   border: 0px;
-  border-right: 3px solid whitesmoke;
+  borderright: 3px solid whitesmoke;
   border-bottom: 3px solid whitesmoke;
   border-radius: 0px 0px 2px 0px;
   opacity: 0;
@@ -445,9 +445,24 @@ header div {
 
 .tasks ul li {
   padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tasks ul li .clear-item-cotainer {
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  color: white;
+  background-color: #b73838;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 17px;
+  cursor: pointer;
 }
 
 .tasks ul .check-box {
@@ -462,22 +477,8 @@ header div {
   background-color: #d3dcfa;
 }
 
-.tasks ul .completed label {
+.tasks ul .completed {
   text-decoration: line-through;
-}
-
-.tasks ul li .clear-item-cotainer {
-  font-weight: 800;
-  width: 20px;
-  height: 20px;
-  font-size: 15px;
-  color: white;
-  background-color: #b73838;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 
 .notes {

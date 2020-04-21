@@ -10,7 +10,7 @@ const TaskItem = ({ task }) => {
     <li className={task.completed ? 'completed' : ''}>
         <CheckBox label={task.title} check={task.completed} handleChange={() => dispatch(updateTasks(task.id))} />
         <div className='clear-item-cotainer' onClick={() => dispatch(removeTask(task.id))}>
-            <span>-</span>
+            <span>x</span>
         </div>
     </li>
 )}
