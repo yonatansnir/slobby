@@ -2,7 +2,6 @@ import TASKS_DATA from './tasks.data';
 import { tasksActionTypes } from './tasks-types';
 import { updateTasks } from './tasks-utils'
 
-
 const INITAIL_STATE = {
     tasksList: TASKS_DATA
 }
