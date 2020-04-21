@@ -9,11 +9,13 @@ const Tasks = () => {
     const [input, setInput] = useState('')
 
     const onAddClick = () => {
-        dispatch(addTask(input));
-        setInput('')
+        if (!input) {
+            alert('Please enter a task')
+        } else {
+            dispatch(addTask(input));
+            setInput('')
+        }
     }
-
-
 
     return (
         <div className="tasks">

@@ -9,7 +9,8 @@ export const updateTasks = (tasksList, id) => {
 }
 
 export const addTask = (tasksList, task) => {
-    const lastId = tasksList[tasksList.length-1].id;
+    let lastId;
+    tasksList.length ? lastId = tasksList[tasksList.length-1].id : lastId = 0;
     tasksList.push({ id: lastId+1, title: task, completed: false }) 
     return tasksList
 }
