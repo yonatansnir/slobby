@@ -445,6 +445,24 @@ header div {
 
 .tasks ul li {
   padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tasks ul li .clear-item-cotainer {
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  color: white;
+  background-color: #b73838;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 17px;
+  cursor: pointer;
 }
 
 .tasks ul .check-box {
