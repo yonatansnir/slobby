@@ -19,6 +19,19 @@
         list-style: none;
         li{
             padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            .clear-item-cotainer {
+                width: 20px;
+                height: 20px;
+                font-size: 15px;
+                color: white;
+                background-color: #b73838;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 17px;
+                cursor: pointer;
+              }
         }
         .check-box{
             margin:0px;

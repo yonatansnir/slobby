@@ -1,6 +1,6 @@
 import TASKS_DATA from './tasks.data';
 import { tasksActionTypes } from './tasks-types';
-import { updateTasks } from './tasks-utils'
+import { updateTasks, addTask, removeTask } from './tasks-utils'
 
 const INITAIL_STATE = {
     tasksList: TASKS_DATA
@@ -13,6 +13,18 @@ export const tasksReducer = (state=INITAIL_STATE, action) => {
                 ...state,
                 tasksList: updateTasks(state.tasksList, action.payload)
             }
+
+        case tasksActionTypes.ADD_TASK:
+            return {
+                ...state,
+                tasksList: addTask(state.tasksList, action.payload)
+            }
+        
+        case tasksActionTypes.REMOVE_TASK: 
+            return {
+                ...state,
+                tasksList: removeTask(state.tasksList, action.payload)
+        }
         default:
             return state;
     }
