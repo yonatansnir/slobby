@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-
 const Menu = ({ openMenu, setOpenMenu }) => {
     const items = [
         { name: 'dashboard', url:'/', label: 'Dashboard' },
@@ -13,13 +9,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
       ]
     return(
         <div className={openMenu ? "sidenav open" : "sidenav close"} >
-            <List className="menu-list" disablePadding dense>
-                {items.map(({ label, name, url, ...rest }) => (
-                <ListItem  className="menu-item" key={name} button {...rest}>
-                    <ListItemText><Link onClick={() => setOpenMenu(!openMenu)} to = {`${url}`}>{label}</Link></ListItemText> 
-                </ListItem>
-                ))}
-            </List>   
+            {items.map(item => <div className="menu-item">{item.label}</div>)}
         </div>
     )
 }

@@ -5,6 +5,11 @@ body {
     background: $body-bg;
     min-height: 100vh;
 }
+.main{
+    @media #{$break2open}{
+        margin-left: 250px;
+    }
+}
 .wrapper{
     padding: 0px;
 }

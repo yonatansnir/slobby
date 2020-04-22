@@ -18,11 +18,13 @@ const App = () => {
     <div className="wrapper">
       <Header />
       {user ? <Login /> :
-        <Switch>
-          <Route exact path="/" component={Dashboard} />
-          <Route path="/users" component={Users} />
-          <Route path="/tasknotes" component={TasksNotes} />
-        </Switch>
+        <div className="main">
+          <Switch>
+            <Route exact path="/" component={Dashboard} />
+            <Route path="/users" component={Users} />
+            <Route path="/tasknotes" component={TasksNotes} />
+          </Switch>
+        </div>
       }
       {/* <Log /> */}
       {/* <Users /> */}

@@ -9,13 +9,6 @@ import {
 const Hamburger = () => {
     const [clickMenu, setClickMenu] = useState(true);
     const [openMenu, setOpenMenu] = useState(false);
-/* 
-    const items = [
-        { name: 'TasksNotes', label: 'Tasks Notes' },
-        { name: 'Users', label: 'Users' },
-        { name: 'Dashboard', label: 'Dashboard' },
-      ] */
-    
  
     const handleMenuClick = () =>{
         setClickMenu(!clickMenu);
@@ -35,7 +28,7 @@ const Hamburger = () => {
                 <span></span>
                 <span></span>
             </div>
-            <Menu openMenu = {openMenu} setOpenMenu = {setOpenMenu} />
+            <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
         </React.Fragment>
     )
 }
