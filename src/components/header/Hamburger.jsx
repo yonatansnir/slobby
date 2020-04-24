@@ -2,19 +2,13 @@ import React, {useState} from 'react';
 import Menu from '../menu/Menu';
 
 const Hamburger = () => {
-    const [clickMenu, setClickMenu] = useState(true);
     const [openMenu, setOpenMenu] = useState(false);
- 
-    const handleMenuClick = () =>{
-        setClickMenu(!clickMenu);
-        setOpenMenu(!openMenu);
-    }
     
     return(
         <React.Fragment>
             <div 
-                className={clickMenu ? 'hamburger close' : 'hamburger open' } 
-                onClick={handleMenuClick}
+                className={openMenu ? 'hamburger open' : 'hamburger close' } 
+                onClick={() => setOpenMenu(!openMenu)}
             >
                 <span></span>
                 <span></span>
@@ -26,7 +20,6 @@ const Hamburger = () => {
             <Menu
              openMenu={openMenu}
              setOpenMenu={setOpenMenu}
-             setClickMenu={setClickMenu}
             />
         </React.Fragment>
     )

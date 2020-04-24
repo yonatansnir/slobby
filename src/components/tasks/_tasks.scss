@@ -43,7 +43,9 @@
             background-color: rgb(211, 220, 250);
         }
         .completed{
-            text-decoration: line-through;
+            label {
+                text-decoration: line-through;
+            }
         }
     }
 }

@@ -513,7 +513,7 @@ header div {
   background-color: #d3dcfa;
 }
 
-.tasks ul .completed {
+.tasks ul .completed label {
   text-decoration: line-through;
 }
 

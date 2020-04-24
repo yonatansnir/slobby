@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
 
-const Menu = ({ openMenu, setOpenMenu, setClickMenu }) => {
+const Menu = ({ openMenu, setOpenMenu }) => {
     const history = useHistory();
     const items = [
         { name: 'dashboard', url:'/', label: 'Dashboard' },
@@ -12,7 +12,6 @@ const Menu = ({ openMenu, setOpenMenu, setClickMenu }) => {
     const goTo = (url) => {
         history.push(url);
         setOpenMenu(false);
-        setClickMenu(true);
     }
     return(
         <div className={openMenu ? "sidenav open" : "sidenav close"} >
