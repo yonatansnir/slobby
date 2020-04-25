@@ -1,25 +1,25 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
+import { useHistory } from "react-router-dom";
 
 const Menu = ({ openMenu, setOpenMenu }) => {
+    const history = useHistory();
     const items = [
         { name: 'dashboard', url:'/', label: 'Dashboard' },
         { name: 'tasknotes', url:'/tasknotes', label: 'Tasks Notes' },
         { name: 'users', url: '/users', label: 'Users' },
       ]
+    
+    const goTo = (url) => {
+        history.push(url);
+        setOpenMenu(false);
+    }
     return(
         <div className={openMenu ? "sidenav open" : "sidenav close"} >
-            <List className="menu-list" disablePadding dense>
-                {items.map(({ label, name, url, ...rest }) => (
-                <ListItem  className="menu-item" key={name} button {...rest}>
-                    <ListItemText><Link onClick={() => setOpenMenu(!openMenu)} to = {`${url}`}>{label}</Link></ListItemText> 
-                </ListItem>
-                ))}
-            </List>   
+            {items.map(item => (
+                <div className="menu-item" onClick={() => goTo(item.url) }>
+                    {item.label}
+                </div>
+            ))}
         </div>
     )
 }

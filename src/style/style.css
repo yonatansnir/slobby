@@ -11,6 +11,12 @@ body {
   min-height: 100vh;
 }
 
+@media (min-width: 681px) {
+  .main {
+    margin-left: 250px;
+  }
+}
+
 .wrapper {
   padding: 0px;
 }
@@ -109,18 +115,29 @@ header .icon:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
   z-index: 10;
-  top: 53px;
+  top: 0px;
+  padding-top: 53px;
+  width: 250px;
   height: 100vh;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: white;
-  -webkit-box-shadow: 1px 0px 2px #dddddd;
-          box-shadow: 1px 0px 2px #dddddd;
-  border-right: 1px solid #dddddd;
+  border-right: #dddddd solid 1px;
 }
 
 .sidenav .menu-item {
-  background-color: #eeeeee;
+  cursor: pointer;
+  width: 100%;
+  background-color: #f7f7f7;
   border: 1px solid lightgray;
   border-right: 2px solid #362b99;
   padding: 5px 10px;
@@ -142,6 +159,12 @@ header .icon:hover {
 
 .sidenav.close {
   left: -250px;
+}
+
+@media (min-width: 681px) {
+  .sidenav.close {
+    left: 0px;
+  }
 }
 
 .sidenav.open {
@@ -179,12 +202,25 @@ header {
           align-items: center;
   background-color: white;
   padding: 5px 10px;
+  padding-left: 250px;
   border-bottom: #dddddd solid 1px;
   position: relative;
 }
 
+@media (max-width: 680px) {
+  header {
+    padding: 5px 10px;
+  }
+}
+
 header h1 {
   margin-left: 20px;
+}
+
+@media (max-width: 680px) {
+  header h1 {
+    margin-left: 50px;
+  }
 }
 
 header div {
@@ -477,7 +513,7 @@ header div {
   background-color: #d3dcfa;
 }
 
-.tasks ul .completed {
+.tasks ul .completed label {
   text-decoration: line-through;
 }
 
@@ -545,6 +581,19 @@ header div {
   width: 25px;
   height: 25px;
   cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  .hamburger {
+    position: fixed;
+    z-index: 25;
+  }
+}
+
+@media (min-width: 681px) {
+  .hamburger {
+    display: none;
+  }
 }
 
 .hamburger span {

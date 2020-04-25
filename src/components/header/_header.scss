@@ -4,10 +4,17 @@ header{
     align-items: center;
     background-color: rgb(255, 255, 255);
     padding: 5px 10px;
+    padding-left: 250px;
     border-bottom: rgb(221, 221, 221) solid 1px;
     position: relative;
+    @media #{$break1}{
+        padding: 5px 10px;
+    }
     h1{
         margin-#{$start-direction}: 20px;
+        @media #{$break1}{
+            margin-#{$start-direction}: 50px;
+        }
     }
     div{
         display: flex;
