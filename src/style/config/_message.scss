@@ -1,0 +1,20 @@
+.msg{
+    margin: 15px 2px;
+    text-align: center;
+    padding: 5px 0px;
+    &-error{
+        color: rgb(196, 44, 44);
+        border: 1px solid rgb(255, 207, 207); border-radius: 2px;
+        background: rgb(255, 210, 210);
+    }
+    &-sucsses{
+        color: rgb(79, 196, 44);
+        border: 1px solid rgb(207, 255, 209); border-radius: 2px;
+        background: rgb(214, 255, 210);
+    }
+    &-alert{
+        color: rgb(196, 194, 44);
+        border: 1px solid rgb(252, 255, 207); border-radius: 2px;
+        background: rgb(255, 252, 210);
+    }
+}

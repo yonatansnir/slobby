@@ -1,33 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './style/style.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './style/index.css';
 
-import { BrowserRouter } from 'react-router-dom';
-
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import { mainReducer } from './redux/mainReducer';
-
-
-const middlewares = [];
-if (process.env.NODE_ENV === `development`) {
-  const { logger } = require(`redux-logger`);
- 
-  middlewares.push(logger);
-}
-
-const store = createStore(mainReducer, applyMiddleware(...middlewares));
+import App from './App';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Provider store={store}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-    </Provider>
-  </BrowserRouter>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

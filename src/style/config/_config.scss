@@ -1,0 +1,33 @@
+*{ padding: 0px; margin: 0px; box-sizing: border-box;}
+html{ height: 100%; direction: rtl; }
+body{
+    background: #f8f8f8;
+    font-family: Verdana, sans-serif;
+    color: #626262;
+}
+.App{
+    padding: 15px 25px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media #{$bp1}{ flex-direction: column; }
+    .msg{
+        width: 49%;
+    }
+}
+.box{
+    box-shadow: $box-shadow;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.p65{
+    width: 64%;
+    @media #{$bp1}{ width: 100%;  }
+}
+.p35{
+    width: 34%;
+    @media #{$bp1}{ width: 100%;  }
+}

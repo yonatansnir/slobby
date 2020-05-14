@@ -1,24 +1,50 @@
 header{
+    background-color: white;
+    padding: 15px;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    padding: 5px 10px;
-    padding-left: 250px;
-    border-bottom: rgb(221, 221, 221) solid 1px;
-    position: relative;
-    @media #{$break1}{
-        padding: 5px 10px;
-    }
-    h1{
-        margin-#{$start-direction}: 20px;
-        @media #{$break1}{
-            margin-#{$start-direction}: 50px;
-        }
-    }
-    div{
+    justify-content: space-between;
+    
+    .user{
         display: flex;
         align-items: center;
+        svg{
+            width: 35px;
+            fill: rgb(34, 121, 192);
+            box-shadow: $box-shadow;
+            margin-left: 10px;
+        }
+        div span{
+            font-size: small;
+            display: block;
+            span{ width: 6px; height: 6px; 
+                background: rgb(4, 216, 4); 
+                display: inline-block; 
+                border-radius: 50%; margin-left: 5px; margin-top: -2px;
+                box-shadow: 0px 0px 5px 1px rgba(0, 255, 0, 0.26);
+            }
+        }
+    }
+
+    .menu-btn{
+        width: 22px;
+        height: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        span{
+            background: rgba(34,41,47,.5);
+            height: 3px;
+            width: 100%;
+            border-radius: 100px;
+        }
+        &:hover ~ span{
+            background: rgb(41, 102, 200);
+            transition: 0.3s;
+        }
     }
 }
-

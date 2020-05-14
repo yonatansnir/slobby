@@ -1,0 +1,39 @@
+.cards{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 49%;
+    @media #{$bp1}{ width: 100% }
+    .card-item{
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 5px;
+        padding: 20px;
+        width: 49%;
+        box-shadow: $box-shadow;
+        margin-bottom: 10px;
+        @media #{$bp1}{ width: 49%; }
+        h2{color: #2c2c2c;}
+    }
+    .card-icon{
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .packages{
+        fill: rgb(243, 147, 3);
+        background: rgb(255, 235, 208);
+    }
+    .problems{
+        fill: rgb(240, 59, 59);
+        background: rgb(255, 234, 234);
+    }
+    .parking{
+        fill: rgb(44, 44, 129);
+        background: rgb(234, 234, 255);
+    }
+}

@@ -1,0 +1,21 @@
+.lobby{
+    padding: 10px;
+    margin: 20px 0px 30px 0px;
+    box-shadow: $box-shadow;
+    width: 49%;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(100, 185, 255), rgb(63, 123, 201));
+    @media #{$bp1}{ width: 100%; margin-top: -10px; margin-right: 0px; }
+    form{
+        text-align: center;
+        select{
+            outline: none;
+            background: white;
+    
+        }
+    }
+}

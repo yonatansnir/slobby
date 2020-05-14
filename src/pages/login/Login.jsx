@@ -1,53 +1,26 @@
-import React, { useState } from 'react';
-import Input from '../../components/form-element/Input';
-import CheckBox from '../../components/form-element/CheckBox';
-import Button from '../../components/form-element/Button';
-import Icons from '../../components/Icons/Icons';
-import { userLogin } from '../../utils/userAPI';
-import { useDispatch } from 'react-redux';
+import React from 'react';
+
+import UserIcon from '../icons/LoginIcon';
+import PasswordIcon from '../icons/PasswordIcon';
+import LoginIcon from '../icons/UserIcon';
 
 const Login = () => {
-    const dispatch = useDispatch();
-    const [form, setForm] = useState({ user: '', password: '', keepSignIn: false })
-    const [msg, setMsg] = useState({ class: "hide" })
-
-    const handleChange = (e) => {
-        setForm({...form, [e.target.name]: e.target.value})
-    }
-
-    const handleLogin = () => {
-        if (userLogin(form.user, form.password, dispatch)){
-            alert('everything good!')
-            return;
-        }
-        setMsg({ class: "" })
-    }
-
     return(
-        <div className="page login">
+        <div className="login">
             <form onSubmit={(e) => e.preventDefault()}>
-                <Icons icon="account" />
-                <h2>WELCOME ABOURD</h2>
-                <span className={msg.class}>User Or passWord incorrect</span>
-                <Input
-                    label="USER NAME"
-                    name="user"
-                    icon="user"
-                    handleChange={handleChange}
-                />
-                <Input
-                    label="PASSWORD"
-                    name="password"
-                    icon="key"
-                    handleChange={handleChange}
-                />
-                <CheckBox
-                    label="Keep Me Sign In"
-                    name="keepSignIn"
-                    check={form.keepSignIn}
-                    handleChange={() => setForm({...form, keepSignIn: !form.keepSignIn})}
-                />
-                <Button text="LOGIN" styleClass="btn btn-green" handleClick={handleLogin} />
+            <UserIcon />
+                <h2>התחבר</h2>
+                <div className="row">
+                    <input id="user" type="text" required /><label htmlFor="user">שם משתמש</label><span></span>
+                    <LoginIcon />
+                </div>
+                <div className="row">
+                    <div>שכחת סיסמא?</div>
+                    <input id="password" type="password" required /><label htmlFor="password">סיסמא</label><span></span>
+                    <PasswordIcon />
+                </div>
+                <button className="btn btn-blue">התחבר</button>
+                <label className="remember-me"><input type="checkbox" /> זכור אותי</label>
             </form>
         </div>
     )

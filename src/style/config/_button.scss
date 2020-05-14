@@ -1,0 +1,24 @@
+.btn{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: small;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    margin: 10px 0px;
+    cursor: pointer;
+
+    &-blue{
+        background: #22acf0;
+        &:hover{
+            background: radial-gradient(circle, transparent 1px, #3eb3ee 1px);
+            background-size: 15000%;
+            transition: 2s background-size;
+        }
+        &:active{
+            background: #3eb3ee;
+            background-size: 100%;
+        }
+    }
+}
