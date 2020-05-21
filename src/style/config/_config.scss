@@ -7,6 +7,10 @@ body{
 }
 .App{
     padding: 15px 25px;
+    margin-top: 66px;
+}
+.hide{
+    display: none;
 }
 .row{
     display: flex;
@@ -19,6 +23,7 @@ body{
 }
 .box{
     box-shadow: $box-shadow;
+    background: white;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;

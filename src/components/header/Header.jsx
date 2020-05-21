@@ -3,6 +3,7 @@ import LoginIcon from '../icons/LoginIcon';
 
 const Header = () => {
     return(
+        <div className="header-bg">
         <header>
             <div className="user">
                 <LoginIcon />
@@ -17,6 +18,7 @@ const Header = () => {
                 <span></span>
             </div>
         </header>
+        </div>
     )
 }
 

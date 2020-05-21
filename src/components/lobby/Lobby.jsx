@@ -4,7 +4,7 @@ const Lobby = () => {
     return(
         <div className="lobby">
             <form>
-            <h2>באיזה לובי אתם היום?</h2>
+            <h2>באיזה עמדה אתם היום?</h2>
                 <select>
                     <option>לובי אחד</option>
                     <option>לובי שתיים</option>
