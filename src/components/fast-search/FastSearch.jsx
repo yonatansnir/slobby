@@ -6,11 +6,13 @@ const FastSearch = () => {
     return(
         <div className="box fast-search">
             <h2>חיפוש מהיר</h2>
-            <input type="texy" onChange={(e) => setSearch(e.target.value)} />
-            <div className={search === "" ? "hide" : "select"}>
-                {arr.filter(a => a.includes(search)).map(x => (
-                    <div>{x}</div>
-                ))}
+            <div>
+                <input type="texy" onChange={(e) => setSearch(e.target.value)} />
+                <div className={search === "" ? "hide" : "select"}>
+                    {arr.filter(a => a.includes(search)).map(x => (
+                        <div>{x}</div>
+                    ))}
+                </div>
             </div>
         </div>
     )

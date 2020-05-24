@@ -293,6 +293,11 @@ header .menu-btn:hover ~ span {
   background: #eaeaff;
 }
 
+.cards .keys {
+  fill: #38c71c;
+  background: #eaffeb;
+}
+
 .lobby {
   padding: 10px;
   margin: 20px 0px 30px 0px;
@@ -339,16 +344,41 @@ header .menu-btn:hover ~ span {
   margin: 5px 0px;
 }
 
+.fast-search {
+  position: relative;
+}
+
+.fast-search div {
+  position: relative;
+}
+
 .fast-search input {
-  width: 200px;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: large;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 0px 3px rgba(128, 128, 128, 0.521);
+          box-shadow: inset 0px 0px 3px rgba(128, 128, 128, 0.521);
 }
 
 .fast-search .select {
   position: absolute;
-  border: 1px solid red;
+  border: 1px solid #dddddd;
   background: white;
+  font-size: large;
   height: 150px;
-  width: 200px;
+  width: 100%;
+}
+
+.event-log input, .event-log select {
+  font-size: large;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
 }
 
 .log {

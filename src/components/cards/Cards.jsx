@@ -5,7 +5,7 @@ import CardItem from './CardItem';
 const cardArr = [
     { type: "packages", number: 24, desc: "חבילות" },
     { type: "problems", number: 6, desc: "תקלות" },
-    { type: "Tasks", number: 24, desc: "שלום" },
+    { type: "keys", number: 4, desc: "מפתחות נמסרו" },
     { type: "parking", number: 22, desc: "חניות פנויות" }
 ]
 

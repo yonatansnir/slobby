@@ -6,7 +6,7 @@ import Cards from './components/cards/Cards';
 import Lobby from './components/lobby/Lobby';
 import Notes from './components/notes/Notes';
 import FastSearch from './components/fast-search/FastSearch';
-import PackageLog from './components/log/PackageLog';
+import EventsLog from './components/log/EventsLog';
 import GuestsLog from './components/log/GuestsLog';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       </div>
       <div className="row">
         <div className="p65">
-            <PackageLog />
+            <EventsLog />
             <GuestsLog />
         </div>
         <div className="p35">
