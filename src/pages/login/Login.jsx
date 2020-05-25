@@ -1,8 +1,8 @@
 import React from 'react';
 
-import UserIcon from '../icons/LoginIcon';
-import PasswordIcon from '../icons/PasswordIcon';
-import LoginIcon from '../icons/UserIcon';
+import UserIcon from '../components/icons/LoginIcon';
+import PasswordIcon from '../components/icons/PasswordIcon';
+import LoginIcon from '../components/icons/UserIcon';
 
 const Login = () => {
     return(

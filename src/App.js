@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from './components/header/Header';
 
+import Login from './pages/login/Login';
 import Cards from './components/cards/Cards';
 import Lobby from './components/lobby/Lobby';
 import Notes from './components/notes/Notes';
@@ -12,8 +13,8 @@ import GuestsLog from './components/log/GuestsLog';
 function App() {
   return (
     <div className="App">
-      {/* <Login /> */}
-      <Header />
+      <Login />
+      {/* <Header />
       <div className="row">
         <Cards />
         <Lobby />
@@ -27,7 +28,7 @@ function App() {
             <FastSearch />
             <Notes />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

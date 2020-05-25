@@ -2,7 +2,7 @@ import React from 'react';
 
 const EventsLog = () => {
     const arr = [
-        {id: "1", time: "17:22", title: "חבילה עבור ביתלתום", status: "בדלפק | ארון"},
+        {id: "1", time: "17:22", name: "משה", title: "חבילה עבור ביתלתום", status: "בדלפק | ארון"},
         {id: "2", time: "14:22", title: "חבילה עבור ביתלתום", status: "בדלפק | ארון"},
         {id: "3", time: "17:22", title: "חבילה עבור ביתלתום", status: "בדלפק | ארון"}
     ]
